@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>The remove() Method</h1>
+
+<p>The remove() method removes the element from the DOM.</p>
+
+<div  id="demo"><p>Click the button, and this paragraph will be removed from the DOM.</p> <button>click</button></div>
+
+<button onclick="myFunction()">Remove paragraph</button>
+
+<script>
+    function myFunction(){
+        var onclick =document.getElementById('demo');
+        onclick.remove();
+    }
+   
+</script>
+
+</body>
+</html>
+

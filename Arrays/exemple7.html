@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var colors = ["Red", "Green", "Blue"];
+        var removed = colors.splice(0,1); // Remove the first element
+         
+        document.write(colors + "<br>"); // Prints: Green,Blue
+        document.write(removed + "<br>"); // Prints: Red (one item array)
+        document.write(removed.length + "<br>"); // Prints: 1
+         
+        removed = colors.splice(1, 0, "Pink", "Yellow"); // Insert two items at position one
+        document.write(colors + "<br>"); // Prints: Green,Pink,Yellow,Blue
+        document.write(removed + "<br>"); // Empty array
+        document.write(removed.length + "<br>"); // Prints: 0
+         
+        removed = colors.splice(1, 1, "Purple", "Voilet"); // Insert two values, remove one
+        document.write(colors + "<br>"); //Prints: Green,Purple,Voilet,Yellow,Blue
+        document.write(removed + "<br>"); // Prints: Pink (one item array)
+        document.write(removed.length); // Prints: 1
+        </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="solicode"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-12-14 03:55:08 PM"/>
+        <attribute name="created" value="c29saWNvZGU7REVTS1RPUC0yUTcxN1MwOzIwMjEtMTItMTQ7MDM6NDg6NDIgUE07MzEzMg=="/>
+        <attribute name="edited" value="c29saWNvZGU7REVTS1RPUC0yUTcxN1MwOzIwMjEtMTItMTQ7MDM6NTU6MDggUE07MTszMjQw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <assign variable="c" expression="a"/>
+            <assign variable="a" expression="b"/>
+            <assign variable="b" expression="c"/>
+        </body>
+    </function>
+</flowgorithm>

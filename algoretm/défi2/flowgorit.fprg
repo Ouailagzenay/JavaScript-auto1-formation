@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="solicode"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-12-17 12:00:28 PM"/>
+        <attribute name="created" value="c29saWNvZGU7REVTS1RPUC0yUTcxN1MwOzIwMjEtMTItMTc7MTA6MjY6NTEgQU07MzExNA=="/>
+        <attribute name="edited" value="c29saWNvZGU7REVTS1RPUC0yUTcxN1MwOzIwMjEtMTItMTc7MTI6MDA6MjggUE07NDszMjM4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="isFound" type="Boolean" array="False" size=""/>
+            <assign variable="isFound" expression="false"/>
+            <declare name="number" type="Integer" array="True" size="4"/>
+            <assign variable="number[0]" expression="1"/>
+            <assign variable="number[1]" expression="20"/>
+            <assign variable="number[2]" expression="50"/>
+            <assign variable="number[3]" expression="80"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="userInput" type="Integer" array="False" size=""/>
+            <input variable="userInput"/>
+            <for variable="i" start="0" end="3" direction="inc" step="1">
+                <if expression="userInput = number[i]">
+                    <then>
+                        <assign variable="isFound" expression="true"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <if expression="isFound">
+                <then>
+                    <output expression="&quot; it exists&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;it does not exist&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

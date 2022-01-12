@@ -7,10 +7,19 @@
     <title>Document</title>
 </head>
 <body>
-    
-   <h1 id="API"></h1>
-   
-   <script src="script.js"></script>
+ <script >
+ fetch('https://api.openweathermap.org/data/2.5/weather?q=larache&appid=5404e57995c1f200ea61e93416cd50d5')
+
+
+.then(function(reponse){
+    return reponse.json()
+})
+
+.then(function(data){
+console.log(data)
+})
+
+   </script>
     
 </body>
 </html>

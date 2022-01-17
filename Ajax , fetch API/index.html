@@ -8,7 +8,22 @@
 </head>
 <body>
     <script>
+<<<<<<< HEAD
         
+=======
+        fetch("stundent.json")
+        .then(function(reponse){
+            return reponse.json()
+        })
+        .then(function(data){
+            for(var i = 0 ; i < data.students.length ; i++){
+                document.write("<p>"+ data.students[i].name+" " + data.students[i].age + "</p>")
+            }
+        })
+         .catch(function(error){
+         console.error();
+        })
+>>>>>>> bfb2fe960522c0f7a2888cabc5de79b72d05608d
     </script>
 </body>
 </html>
